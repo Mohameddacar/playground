@@ -13,6 +13,11 @@ app.get('/', (req: Request, res: Response) => {
     res.send("Hellow World!");
 });
 
+
+app.get('/api/hello', (req: Request, res: Response) => {
+    res.json({ message: "Hello World!" });
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
     console.log('Environment variables loaded:', process.env.OPENAI_API_KEY ? 'API key found' : 'API key not found');
