@@ -1,19 +1,12 @@
 {
-  "name": "playground",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "my-app",
+  "module": "index.ts",
   "type": "module",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "workspaces":[
-    "packages/*"
-  ],
-  "dependencies": {
-    "openai": "^5.20.3"
+  "devDependencies": {
+    "concurrently": "^9.2.0"
   }
 }
